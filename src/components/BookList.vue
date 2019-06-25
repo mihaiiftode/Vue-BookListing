@@ -4,7 +4,7 @@
     <ul>
       <book-item v-for="book in books" :book="book"></book-item>
     </ul>
-    <book-form @addBook="appendBook"></book-form>
+    <book-form @addBook='appendBook'></book-form>
   </dir>
 </template>
 
@@ -29,8 +29,8 @@ export default {
     };
   },
   methods: {
-    appendBook(bookTile, bookAuthor) {
-      this.books.push({ title: bookTile, author: bookAuthor });
+    appendBook(bookTitle, bookAuthor) {
+      this.books.push({ title: bookTitle, author: bookAuthor });
     }
   }
 };
