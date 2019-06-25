@@ -1,11 +1,11 @@
 <template>
-  <dir>
+  <div>
     <h1>{{ title }}</h1>
     <ul>
       <book-item v-for="book in books" :book="book"></book-item>
     </ul>
     <book-form @addBook='appendBook'></book-form>
-  </dir>
+  </div>
 </template>
 
 <script>
